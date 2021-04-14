@@ -15,13 +15,13 @@ struct FCameraShakes {
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditInstanceOnly, meta = (ToolTip = "Idle Camera Shake"), Category = "Shakes")
-		TSubclassOf<class UCameraShakeBase> IdleShake;
+		TSubclassOf<class UMatineeCameraShake> IdleShake;
 	UPROPERTY(EditInstanceOnly, meta = (ToolTip = "Walking Camera Shake"), Category = "Shakes")
-		TSubclassOf<class UCameraShakeBase> WalkingShake;
+		TSubclassOf<class UMatineeCameraShake> WalkingShake;
 	UPROPERTY(EditInstanceOnly, meta = (ToolTip = "Running Camera Shake"), Category = "Shakes")
-		TSubclassOf<class UCameraShakeBase> RunningShake;
+		TSubclassOf<class UMatineeCameraShake> RunningShake;
 	UPROPERTY(EditInstanceOnly, meta = (ToolTip = "Jumping Camera Shake"), Category = "Shakes")
-		TSubclassOf<class UCameraShakeBase> JumpingShake;
+		TSubclassOf<class UMatineeCameraShake> JumpingShake;
 };
 
 USTRUCT()
